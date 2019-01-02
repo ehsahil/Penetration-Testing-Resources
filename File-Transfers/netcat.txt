@@ -1,0 +1,7 @@
+#Sending files with netcat (nc):
+
+SETUP LISTENER ON RECEIVER:
+nc -nlvp 4444 > outputname.txt
+
+POST FROM SENDER:
+nc -nv 10.10.10.10 4444 < inputfile.txt
