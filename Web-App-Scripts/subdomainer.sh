@@ -20,7 +20,7 @@ amass (https://github.com/OWASP/Amass)
 echo -e "\n\e[00;31m#########################################################\e[00m" 
 echo -e "\e[00;31m#\e[00m" "\e[00;33mSub-Domain Enumeration Script\e[00m" "\e[00;31m#\e[00m"
 echo -e "\e[00;31m#########################################################\e[00m"
-echo -e "\e[00;33m# www.twitter.com/cxosmo\e[00m"
+echo -e "\e[00;33m# www.medium.com/@cxosmo\e[00m"
 echo -e "\e[00;33m# Version 1\e[00m\n\n"
 
 echo -e ".------..------..------..------..------..------."
@@ -59,7 +59,7 @@ else
 fi
 }
 
-debug_info()
+report_file()
 {
 if [ "$report" ]; then
 	echo -e "[+] Raw terminal output will be saved to the following file = $report\n"
@@ -109,7 +109,7 @@ done
 call_each()
 {
   scope_file  
-  debug_info
+  report_file
   sub_enum
 }
 
